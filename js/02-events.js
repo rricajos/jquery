@@ -20,15 +20,20 @@ $(document).ready(function () {
     }
   );
 
-  // mousemove
-  $(document).mousemove(function () {
+  function handleMove(event) {
+    $("#myElement > p").text("Move event: X=" + event.pageX + ", Y=" + event.pageY);
+  }
 
-    $("#02-events > p").text("mousemove event: "+ event.pageX + " X·Y " + event.pageY);
-  });
+  // Mousemove event
+  $(document).on("mousemove", handleMove);
+
+  // Touchmove event
+  $(document).on("touchmove", handleMove);
 
   // dbl click (also for touch events.)
   $("[id^='02-events']").click(function () {
     $(document).off("mousemove");
+    $(document).off("touchmove");
     $(this).css("background", "yellow");
   });
   // dbl click handle
