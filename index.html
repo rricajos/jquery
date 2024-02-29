@@ -1,22 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <title>JQuery</title>
 
   <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
   <script type="text/javascript" src="js/01-selectors.js"></script>
+  <script type="text/javascript" src="js/02-events.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #eee;
+      background-color: #151526;
 
+      width: 100%;
+      max-width: 1024px;
+      margin: 2em auto;
+
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+
+    }
+
+    div {
+      color: #eee;
+  
+      background-color: #23233e;
+      max-width: 500px;
+      width: 100%;
+      margin: 3px;
+      padding: 3px;
+      border-radius: 1em;
+    }
+
+    div > div {
+      box-sizing: border-box  ;
+      max-width: 494px;
+      width: 100%;
+      background-color: #fff;
+      color: black;
+      padding: 1em;
+ 
+    }
+
+    header, h2 {
+      width: 100%;
+
+      text-align: center;
+
+    }
+
+    .bgyellow {
+      background-color: yellow !important;
+    }
+  </style>
 </head>
+
 <body>
+  <header>
     <h1>Hello JQuery-3.7</h1>
+    <p>Playing with JQuery</p>
     <hr>
+  </header>
+
+  <!-- selectors -->
+  <div>
+
     <h2>01-selectors.js</h2>
-    <p id="red">red id</p>
-    <p class="yellow">yellow class</p>
-    <p id="green"></p>
-    <hr>
+    <div>
+      <p id="red">red id</p>
+      <p class="yellow">yellow class</p>
+      <p id="green"></p>
+      <a href="somewhere.com">somewhere.com</a>
+      <a href="someplace.com">someplace.com</a>
+      <a href="somewhere.com">somewhere.com</a>
+    </div>
+    
+
+  </div>
+
+  <!-- events -->
+  <div>
+    <h2>02-events.js</h2>
+    <div id="02-events">
+      <p>double click this</p>
+    </div>
+    <div id="02-events-handle">
+      <p>(click) stop the event mousemove event - (dbl) keep yellow</p>
+    </div>
+  </div>
+
+
+
+
 </body>
+
 </html>
