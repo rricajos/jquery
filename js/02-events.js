@@ -21,7 +21,7 @@ $(document).ready(function () {
   );
 
   function handleMove(event) {
-    $("#myElement > p").text("Move event: X=" + event.pageX + ", Y=" + event.pageY);
+    $("#02-events > p").text("Move event: X=" + event.pageX + ", Y=" + event.pageY);
   }
 
   // Mousemove event
