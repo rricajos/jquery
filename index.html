@@ -10,6 +10,7 @@
   <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
   <script type="text/javascript" src="js/01-selectors.js"></script>
   <script type="text/javascript" src="js/02-events.js"></script>
+  <script type="text/javascript" src="js/03-dom.js"></script>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -36,7 +37,7 @@
       border-radius: 1em;
     }
 
-    div > div {
+    div>div {
       width: auto;
       background-color: #fff;
       color: black;
@@ -44,12 +45,15 @@
       margin: 0.75em;
     }
 
-    header, h2 {
+    header,
+    h2 {
       width: 100%;
 
       text-align: center;
 
     }
+
+   
 
     .bgyellow {
       background-color: yellow !important;
@@ -76,7 +80,7 @@
       <a href="someplace.com">someplace.com</a>
       <a href="somewhere.com">somewhere.com</a>
     </div>
-    
+
 
   </div>
 
@@ -93,7 +97,26 @@
   </div>
 
 
+  <!-- dom -->
+  <div>
+    <h2>03-dom.js</h2>
 
+    <div id="03-dom">
+
+      <sup>type something like google.com and press enter</sup>
+
+      <form id="03-dom-form" action="">
+        <input id="03-dom-input" type="text">
+        <input id="03-dom-input-btn" type="submit" value="enter" class="bgyellow" style="cursor: pointer;">
+      </form>
+
+      <ul id="03-dom-ul">
+        <li><a href="https://rricajos.github.io/rricajos/">rricajos.github.io/rricajos</a></li>
+      </ul>
+
+    </div>
+
+  </div>
 
 </body>
 
